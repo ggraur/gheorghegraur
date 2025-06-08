@@ -24,6 +24,7 @@ body.dark-mode {
   color: var(--text-color);
 }
 
+/* ========== HEADER & FOOTER ========== */
 header,
 footer {
   background-color: var(--primary-color);
@@ -32,6 +33,7 @@ footer {
   padding: 30px 15px;
 }
 
+/* ========== MAIN CONTENT ========== */
 main {
   max-width: 900px;
   margin: auto;
@@ -57,6 +59,7 @@ ul {
   font-size: 0.9em;
 }
 
+/* ========== FORMS ========== */
 form input,
 form textarea {
   width: 100%;
@@ -81,6 +84,7 @@ form button:hover {
   background-color: #0096c7;
 }
 
+/* ========== DOWNLOAD BUTTON ========== */
 .download-btn {
   display: inline-block;
   background-color: var(--accent);
@@ -95,6 +99,7 @@ form button:hover {
   background-color: #0096c7;
 }
 
+/* ========== ANIMATIONS ========== */
 .fade-in {
   -webkit-animation: fadeIn 1s ease-out;
           animation: fadeIn 1s ease-out;
@@ -135,6 +140,7 @@ form button:hover {
   }
 }
 
+/* ========== RESPONSIVE ========== */
 @media (max-width: 600px) {
   body,
   main {
@@ -149,6 +155,7 @@ form button:hover {
   }
 }
 
+/* ========== FLOATING BUTTONS ========== */
 .floating-buttons {
   position: fixed;
   bottom: 20px;
@@ -197,6 +204,7 @@ body.dark-mode #bmc-button:hover {
   background-color: #666;
 }
 
+/* ========== THEME TOGGLE BUTTON ========== */
 #theme-toggle {
   background-color: transparent;
   border: 2px solid #ccc;
@@ -237,6 +245,7 @@ body.dark-mode #theme-toggle:hover {
   border-color: #999;
 }
 
+/* ========== PROFILE PHOTO ========== */
 .profile-pic {
   width: 160px;
   height: 160px;
@@ -247,12 +256,14 @@ body.dark-mode #theme-toggle:hover {
   margin-top: 20px;
 }
 
+/* ========== QR CODE ========== */
 .qr-code {
   width: 200px;
   height: auto;
   margin-top: 10px;
 }
 
+/* ========== LANGUAGE SWITCHER ========== */
 .language-switcher {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,5 +295,10 @@ body.dark-mode #theme-toggle:hover {
   border-radius: 3px;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .language-switcher img {
+  -webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+          box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
 }
 /*# sourceMappingURL=style.css.map */

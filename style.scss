@@ -24,7 +24,9 @@ body.dark-mode {
     color: var(--text-color);
 }
 
-// Header & Footer
+
+/* ========== HEADER & FOOTER ========== */
+
 header,
 footer {
     background-color: var(--primary-color);
@@ -33,7 +35,9 @@ footer {
     padding: 30px 15px;
 }
 
-// Main Content
+
+/* ========== MAIN CONTENT ========== */
+
 main {
     max-width: 900px;
     margin: auto;
@@ -59,7 +63,9 @@ ul {
     font-size: 0.9em;
 }
 
-// Forms
+
+/* ========== FORMS ========== */
+
 form input,
 form textarea {
     width: 100%;
@@ -83,7 +89,9 @@ form button {
     }
 }
 
-// Download button
+
+/* ========== DOWNLOAD BUTTON ========== */
+
 .download-btn {
     display: inline-block;
     background-color: var(--accent);
@@ -97,7 +105,9 @@ form button {
     }
 }
 
-// Animations
+
+/* ========== ANIMATIONS ========== */
+
 .fade-in {
     animation: fadeIn 1s ease-out;
     text-align: left;
@@ -121,7 +131,9 @@ form button {
     }
 }
 
-// Responsive
+
+/* ========== RESPONSIVE ========== */
+
 @media (max-width: 600px) {
     body,
     main {
@@ -136,7 +148,9 @@ form button {
     }
 }
 
-// Floating Buttons Container
+
+/* ========== FLOATING BUTTONS ========== */
+
 .floating-buttons {
     position: fixed;
     bottom: 20px;
@@ -148,7 +162,6 @@ form button {
     z-index: 1000;
 }
 
-// Buy Me a Coffee Button
 #bmc-button {
     font-size: 28px;
     background-color: #ffdd00;
@@ -172,7 +185,9 @@ body.dark-mode #bmc-button {
     }
 }
 
-// Theme Toggle Button
+
+/* ========== THEME TOGGLE BUTTON ========== */
+
 #theme-toggle {
     background-color: transparent;
     border: 2px solid #ccc;
@@ -204,7 +219,9 @@ body.dark-mode #theme-toggle {
     }
 }
 
-// Profile Photo
+
+/* ========== PROFILE PHOTO ========== */
+
 .profile-pic {
     width: 160px;
     height: 160px;
@@ -214,12 +231,17 @@ body.dark-mode #theme-toggle {
     margin-top: 20px;
 }
 
-// QR Code
+
+/* ========== QR CODE ========== */
+
 .qr-code {
     width: 200px;
     height: auto;
     margin-top: 10px;
 }
+
+
+/* ========== LANGUAGE SWITCHER ========== */
 
 .language-switcher {
     display: flex;
@@ -240,4 +262,8 @@ body.dark-mode #theme-toggle {
             box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
         }
     }
+}
+
+body.dark-mode .language-switcher img {
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
 }
