@@ -252,4 +252,37 @@ body.dark-mode #theme-toggle:hover {
   height: auto;
   margin-top: 10px;
 }
+
+.language-switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  margin: 15px auto;
+}
+
+.language-switcher a {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.language-switcher a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.language-switcher a img {
+  width: 28px;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
 /*# sourceMappingURL=style.css.map */
