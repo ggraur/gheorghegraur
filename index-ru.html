@@ -22,7 +22,6 @@
 
 <body>
     <header class="fade-in-center">
-        <button onclick="toggleTheme()">🌓</button>
         <nav>
             <a href="index.html">EN</a> |
             <a href="index-pt.html">PT</a> |
@@ -100,9 +99,17 @@
         <p>&copy; 2025 Георге Граур – Создано с ❤️</p>
     </footer>
 
-    <!-- Купите мне кофе -->
-    <a href="https://coff.ee/ggraur" target="_blank" id="bmc-button" title="Купите мне кофе ☕" rel="noopener noreferrer" aria-label="Купите мне кофе">
-        <span role="img" aria-label="Чашка кофе">☕</span></a>
+    <div class="floating-buttons">
+        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+            <span class="icon">🌓</span>
+        </button>
+
+        <!-- Купите мне кофе -->
+        <a href="https://coff.ee/ggraur" target="_blank" id="bmc-button" title="Купите мне кофе ☕" rel="noopener noreferrer" aria-label="Купите мне кофе">
+            <span role="img" aria-label="Чашка кофе">☕</span></a>
+    </div>
+
+
 
     <section id="qr-code" class="fade-in-center">
         <h2>📱 Поддержите меня</h2>

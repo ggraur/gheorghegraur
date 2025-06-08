@@ -22,7 +22,6 @@
 
 <body>
     <header class="fade-in-center">
-        <button onclick="toggleTheme()">🌓</button>
         <nav>
             <a href="index.html">EN</a> |
             <a href="index-pt.html">PT</a> |
@@ -59,7 +58,8 @@
             <h2>💼 Experiență Profesională</h2>
             <article>
                 <h3>Alpha Automation LDA <span class="years">2021–2025</span></h3>
-                <p>Am proiectat și dezvoltat aplicații .NET Core/Angular, integrări cu SAP, optimizări SQL și rapoarte SSRS.</p>
+                <p>Am proiectat și dezvoltat aplicații .NET Core/Angular, integrări cu SAP, optimizări SQL și rapoarte SSRS.
+                </p>
             </article>
             <article>
                 <h3>Pepper Group <span class="years">2018–2020</span></h3>
@@ -98,9 +98,16 @@
         <p>&copy; 2025 Gheorghe Graur – Creat cu ❤️</p>
     </footer>
 
-    <!-- Cumpără-mi o cafea -->
-    <a href="https://coff.ee/ggraur" target="_blank" id="bmc-button" title="Cumpără-mi o cafea ☕" rel="noopener noreferrer" aria-label="Cumpără-mi o cafea">
-        <span role="img" aria-label="Cană de cafea">☕</span></a>
+    <div class="floating-buttons">
+        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+            <span class="icon">🌓</span>
+        </button>
+
+        <!-- Cumpără-mi o cafea -->
+        <a href="https://coff.ee/ggraur" target="_blank" id="bmc-button" title="Cumpără-mi o cafea ☕" rel="noopener noreferrer" aria-label="Cumpără-mi o cafea">
+            <span role="img" aria-label="Cană de cafea">☕</span></a>
+    </div>
+
 
     <section id="qr-code" class="fade-in-center">
         <h2>📱 Susține-mă</h2>

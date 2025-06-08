@@ -22,7 +22,6 @@
 
 <body>
     <header class="fade-in-center">
-        <button onclick="toggleTheme()">🌓</button>
         <nav>
             <a href="index.html">EN</a> |
             <a href="index-pt.html">PT</a> |
@@ -100,9 +99,16 @@
         <p>&copy; 2025 Gheorghe Graur – Criado com ❤️</p>
     </footer>
 
-    <!-- Compre-me um Café -->
-    <a href="https://coff.ee/ggraur" target="_blank" id="bmc-button" title="Compre-me um café ☕" rel="noopener noreferrer" aria-label="Compre-me um café">
-        <span role="img" aria-label="Xícara de café">☕</span></a>
+    <div class="floating-buttons">
+        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+            <span class="icon">🌓</span>
+        </button>
+
+        <!-- Compre-me um Café -->
+        <a href="https://coff.ee/ggraur" target="_blank" id="bmc-button" title="Compre-me um café ☕" rel="noopener noreferrer" aria-label="Compre-me um café">
+            <span role="img" aria-label="Xícara de café">☕</span></a>
+
+    </div>
 
     <section id="qr-code" class="fade-in-center">
         <h2>📱 Apoie-me</h2>
