@@ -1,0 +1,143 @@
+
+:root {
+    --primary-color: #004466;
+    --background: #ffffff;
+    --text-color: #222;
+    --accent: #0077b6;
+    --font-main: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--background);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    margin: 0 0 15px;
+}
+
+ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.years {
+    color: gray;
+    font-size: 0.9em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: var(--font-main);
+}
+
+form button {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0096c7;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #0096c7;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    body, main {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .download-btn {
+        font-size: 0.95em;
+        padding: 10px 16px;
+    }
+}
+
+#bmc-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 28px;
+    background-color: #ffdd00;
+    color: #111;
+    padding: 10px 14px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+    z-index: 999;
+}
+#bmc-button:hover {
+    transform: scale(1.1);
+    background-color: #ffee33;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #004466;
+    margin-top: 20px;
+}
+
+.qr-code {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
