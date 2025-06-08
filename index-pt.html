@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gheorghe Graur – Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+        window.onload = function() {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <button onclick="toggleTheme()">🌓</button>
+        <nav>
+            <a href="index.html">EN</a> |
+            <a href="index-pt.html">PT</a> |
+            <a href="index-ro.html">RO</a> |
+            <a href="index-ru.html">RU</a>
+        </nav>
+        <h1>Gheorghe Graur</h1>
+        <p>Desenvolvedor Full Stack</p>
+    </header>
+    <main>
+        <section>
+            <img src="ggraur_foto.png" alt="Gheorghe Graur" class="profile-pic" />
+        </section>
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Sou um desenvolvedor experiente com mais de 12 anos de atuação na entrega de soluções web e backend escaláveis e de alta qualidade. Especialista em .NET, SQL Server, Angular e sistemas em nuvem. Aberto a oportunidades híbridas ou remotas na
+                Europa.
+            </p>
+        </section>
+        <section>
+            <h2>Competências Técnicas</h2>
+            <ul>
+                <li>C#, .NET Core, EF Core, Web API</li>
+                <li>Angular, TypeScript, SCSS</li>
+                <li>SQL Server, T-SQL, SSRS</li>
+                <li>Azure, Git, Jenkins</li>
+                <li>JSON, XML, JWT, SAP/SAGE</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Experiência Profissional</h2>
+            <p>See CV below for full professional experience.</p>
+        </section>
+        <section>
+            <h2>Educação</h2>
+            <p>Technical University of Moldova – BSc in Computer Systems Engineering</p>
+        </section>
+        <section>
+            <h2>Idiomas e Outros</h2>
+            <p>Portuguese, English, Romanian, Russian – EU Driving License – Immediate Availability</p>
+        </section>
+        <section>
+            <h2>Certificações</h2>
+            <ul>
+                <li>Microsoft SQL Server 2022 Essential Training – 01/05/2024</li>
+                <li>Cloud Security – 08/05/2024</li>
+                <li>Python for Data Engineering – 28/06/2024</li>
+                <li>Figma for UX Design – 14/04/2025</li>
+                <li>Angular Progressive Web Apps – 23/04/2025</li>
+                <!-- abbreviated for demo -->
+            </ul>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <p>Você pode entrar em contato comigo pelo e-mail:</p>
+            <a href="mailto:indo23md@yahoo.com" class="download-btn">Enviar Email</a>
+        </section>
+        <section>
+            <h2>Baixar CV</h2>
+            <a href="Gheorghe_Graur_CV.pdf" download class="download-btn">Baixar CV</a>
+        </section>
+        <section id="qr-code" class="fade-in">
+            <h2>📱 Apoie-me</h2>
+            <p>Scan the QR code below to buy me a coffee:</p>
+            <img src="bmc_qr.png" alt="Buy Me a Coffee QR" class="qr-code" />
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Gheorghe Graur – Desenvolvido com ❤️</p>
+    </footer>
+</body>
+
+</html>
