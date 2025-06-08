@@ -2,26 +2,15 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gheorghe Graur – Desenvolvedor Full Stack</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-        }
-        window.onload = function() {
-            if (localStorage.getItem('theme') === 'dark') {
-                document.body.classList.add('dark-mode');
-            }
-        }
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gheorghe Graur – Programador Full Stack</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <button onclick="toggleTheme()">🌓</button>
+    <header class="fade-in">
         <nav>
             <a href="index.html">EN</a> |
             <a href="index-pt.html">PT</a> |
@@ -29,79 +18,83 @@
             <a href="index-ru.html">RU</a>
         </nav>
         <h1>Gheorghe Graur</h1>
-        <p>Desenvolvedor Full Stack</p>
+        <p>Programador Full Stack Sénior (.NET / Angular)</p>
     </header>
+
     <main>
-        <section>
+        <section id="profile-pic" class="fade-in">
             <img src="ggraur_foto.png" alt="Gheorghe Graur" class="profile-pic" />
         </section>
-        <section>
-            <h2>Sobre Mim</h2>
-            <p>Sou um desenvolvedor experiente com mais de 12 anos de atuação na entrega de soluções web e backend escaláveis e de alta qualidade. Especialista em .NET, SQL Server, Angular e sistemas em nuvem. Aberto a oportunidades híbridas ou remotas na
-                Europa.
-            </p>
+
+        <section id="about" class="fade-in">
+            <h2>👤 Sobre Mim</h2>
+            <p>Sou um programador experiente com mais de 12 anos de prática no desenvolvimento de soluções web e backend escaláveis e de alta qualidade. Especialista em .NET, SQL Server, Angular e sistemas cloud, foco-me em código limpo, testável e com desempenho
+                otimizado. Disponível para posições híbridas ou remotas na Europa.</p>
         </section>
-        <section>
-            <h2>Competências Técnicas</h2>
+
+        <section id="skills" class="fade-in">
+            <h2>🛠️ Competências-Chave</h2>
             <ul>
-                <li>C#, .NET Core, EF Core, Web API</li>
-                <li>Angular, TypeScript, SCSS</li>
-                <li>SQL Server, T-SQL, SSRS</li>
-                <li>Azure, Git, Jenkins</li>
-                <li>JSON, XML, JWT, SAP/SAGE</li>
+                <li><strong>Backend:</strong> C#, .NET Core 3.1–7.0, EF Core, Web API, Microserviços</li>
+                <li><strong>Frontend:</strong> Angular (v11–15), TypeScript, SCSS, Bootstrap</li>
+                <li><strong>Base de Dados:</strong> SQL Server, T-SQL, PL/SQL, SSRS</li>
+                <li><strong>Cloud/DevOps:</strong> Azure, Azure DevOps, Git, Jenkins</li>
+                <li><strong>Integração:</strong> JSON, XML, SOAP, JWT, SAP/SAGE</li>
             </ul>
         </section>
-        <section>
-            <h2>Experiência Profissional</h2>
-            <p>See CV below for full professional experience.</p>
+
+        <section id="experience" class="fade-in">
+            <h2>💼 Experiência Profissional</h2>
+            <article>
+                <h3>Alpha Automation LDA <span class="years">2021–2025</span></h3>
+                <p>Desenvolvimento de aplicações .NET Core/Angular, integração com SAP, otimização de SQL e relatórios SSRS.</p>
+            </article>
+            <article>
+                <h3>Pepper Group <span class="years">2018–2020</span></h3>
+                <p>Manutenção do sistema ARM em WinForms, gestão de versões da BD e criação de scripts CI.</p>
+            </article>
+            <article>
+                <h3>Gestecnica LDA <span class="years">2018 e 2020–2021</span></h3>
+                <p>Migração de ASP para .NET, desenvolvimento de ferramentas de faturação e mentoria de programadores juniores.</p>
+            </article>
         </section>
-        <section>
-            <h2>Educação</h2>
-            <p>Technical University of Moldova – BSc in Computer Systems Engineering</p>
+
+        <section id="education" class="fade-in">
+            <h2>🎓 Formação Académica</h2>
+            <p><strong>Universidade Técnica da Moldávia</strong><br>Licenciatura em Engenharia de Sistemas Computacionais – Informática & Microeletrónica</p>
         </section>
-        <section>
-            <h2>Idiomas e Outros</h2>
-            <p>Portuguese, English, Romanian, Russian – EU Driving License – Immediate Availability</p>
+
+        <section id="extras" class="fade-in">
+            <h2>🌍 Línguas e Extras</h2>
+            <p>Português (nativo), Inglês (fluente), Romeno (nativo), Russo (fluente)</p>
+            <p>Carta de Condução (UE) – Disponibilidade Imediata</p>
         </section>
-        <section>
-            <h2>Certificações</h2>
-            <ul>
-                <li>Microsoft SQL Server 2022 Essential Training – 01/05/2024</li>
-                <li>Cloud Security – 08/05/2024</li>
-                <li>Python for Data Engineering – 28/06/2024</li>
-                <li>Figma for UX Design – 14/04/2025</li>
-                <li>Angular Progressive Web Apps – 23/04/2025</li>
-                <!-- abbreviated for demo -->
-            </ul>
+
+        <section id="contact" class="fade-in">
+            <h2>📬 Contacte-me</h2>
+            <p>Pode entrar em contacto comigo através de e-mail:</p>
+            <a href="mailto:indo23md@yahoo.com" class="download-btn">Enviar E-mail</a>
         </section>
-        <section>
-            <h2>Contato</h2>
-            <p>Você pode entrar em contato comigo pelo e-mail:</p>
-            <a href="mailto:indo23md@yahoo.com" class="download-btn">Enviar Email</a>
-        </section>
-        <section>
-            <h2>Baixar CV</h2>
-            <a href="Gheorghe_Graur_CV.pdf" download class="download-btn">Baixar CV</a>
-        </section>
-        <section id="qr-code" class="fade-in">
-            <h2>📱 Apoie-me</h2>
-            <p>Digitalize o código QR abaixo para me comprar um café:</p>
-            <img src="bmc_qr.png" alt="Compre-me um Café" class="qr-code" />
+
+        <section id="cv" class="fade-in">
+            <h2>📄 Descarregar CV</h2>
+            <a href="Gheorghe_Graur_CV.pdf" download class="download-btn">Descarregar o meu CV (PDF)</a>
         </section>
     </main>
+
     <footer class="fade-in">
-        <p>&copy; 2025 Gheorghe Graur – Construído com ❤️</p>
+        <p>&copy; 2025 Gheorghe Graur – Criado com ❤️</p>
     </footer>
 
-    <!-- Buy Me a Coffee -->
-    <a href="https://coff.ee/ggraur" target="_blank" id="bmc-button" title="Oferece-me um café ☕" rel="noopener noreferrer" aria-label="Oferece-me um café">
-        <span role="img" aria-label="Chávena de café">☕</span> Oferece-me um café
+    <!-- Compre-me um Café -->
+    <a href="https://coff.ee/ggraur" target="_blank" id="bmc-button" title="Compre-me um café ☕" rel="noopener noreferrer" aria-label="Compre-me um café">
+        <span role="img" aria-label="Xícara de café">☕</span> Compre-me um café
     </a>
 
     <section id="qr-code" class="fade-in">
-        <h2>📱 Apoia-me</h2>
-        <p>Digitaliza o código QR abaixo para me ofereceres um café:</p>
-        <img src="bmc_qr.png" alt="QR Code Oferece-me um café" class="qr-code" />
+        <h2>📱 Apoie-me</h2>
+        <p>Escaneie o código QR abaixo para comprar-me um café:</p>
+        <img src="bmc_qr.png" alt="QR para Compre-me um Café" class="qr-code" />
     </section>
 </body>
 
