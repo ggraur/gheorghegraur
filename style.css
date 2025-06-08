@@ -274,4 +274,46 @@ body.dark-mode #bmc-button:hover {
   left: 10px;
   right: auto;
 }
+
+#theme-toggle {
+  background-color: transparent;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  padding: 0.5rem 0.6rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+#theme-toggle .icon {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+body.dark-mode #theme-toggle {
+  border-color: #666;
+  background-color: #222;
+  color: #eee;
+}
+
+body.dark-mode #theme-toggle:hover {
+  background-color: #333;
+  border-color: #999;
+}
 /*# sourceMappingURL=style.css.map */
