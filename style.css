@@ -263,7 +263,7 @@ body.dark-mode #theme-toggle:hover {
   margin-top: 10px;
 }
 
-/* ========== LANGUAGE SWITCHER ========== */
+/* ========== LANGUAGE SWITCHER (CDN FLAGS) ========== */
 .language-switcher {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,6 +271,9 @@ body.dark-mode #theme-toggle:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 12px;
   margin: 15px auto;
 }
@@ -292,13 +295,17 @@ body.dark-mode #theme-toggle:hover {
   width: 28px;
   height: auto;
   display: block;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
 }
 
 body.dark-mode .language-switcher img {
-  -webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
-          box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 4px rgba(255, 255, 255, 0.15);
+          box-shadow: 0 0 4px rgba(255, 255, 255, 0.15);
 }
 /*# sourceMappingURL=style.css.map */

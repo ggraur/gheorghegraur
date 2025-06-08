@@ -241,11 +241,12 @@ body.dark-mode #theme-toggle {
 }
 
 
-/* ========== LANGUAGE SWITCHER ========== */
+/* ========== LANGUAGE SWITCHER (CDN FLAGS) ========== */
 
 .language-switcher {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 12px;
     margin: 15px auto;
     a {
@@ -258,12 +259,13 @@ body.dark-mode #theme-toggle {
             width: 28px;
             height: auto;
             display: block;
-            border-radius: 3px;
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+            transition: box-shadow 0.3s ease;
         }
     }
 }
 
 body.dark-mode .language-switcher img {
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.15);
 }
