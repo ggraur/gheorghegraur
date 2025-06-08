@@ -22,7 +22,7 @@
 
 <body>
     <header class="fade-in-center">
-        <button onclick="toggleTheme()">🌓</button>
+        <button onclick="toggleTheme()" aria-label="Toggle theme">🌓</button>
         <nav>
             <a href="index.html">EN</a> |
             <a href="index-pt.html">PT</a> |
@@ -33,16 +33,15 @@
         <p>Senior Full Stack Developer (.NET / Angular)</p>
     </header>
 
-
     <main>
         <section id="profile-pic" class="fade-in-center">
-            <img src="ggraur_foto.png" alt="Gheorghe Graur" class="profile-pic" />
+            <img src="ggraur_foto.png" alt="Portrait of Gheorghe Graur" class="profile-pic" />
         </section>
 
         <section id="about" class="fade-in">
             <h2>👤 About Me</h2>
-            <p>I am a seasoned developer with 12+ years of experience delivering high-quality, scalable web and backend solutions. Proficient in .NET, SQL Server, Angular, and cloud systems, I focus on clean, testable code and performance optimization. Open
-                to hybrid or remote positions across Europe.</p>
+            <p>I am a seasoned developer with over 12 years of experience delivering high-quality, scalable web and backend solutions. Proficient in .NET, SQL Server, Angular, and cloud systems, I focus on clean, testable code and performance optimization.
+                Open to hybrid or remote positions across Europe.</p>
         </section>
 
         <section id="skills" class="fade-in">
@@ -51,7 +50,7 @@
                 <li><strong>Backend:</strong> C#, .NET Core 3.1–7.0, EF Core, Web API, Microservices</li>
                 <li><strong>Frontend:</strong> Angular (v11–15), TypeScript, SCSS, Bootstrap</li>
                 <li><strong>Database:</strong> SQL Server, T-SQL, PL/SQL, SSRS</li>
-                <li><strong>Cloud/DevOps:</strong> Azure, Azure DevOps, Git, Jenkins</li>
+                <li><strong>Cloud / DevOps:</strong> Azure, Azure DevOps, Git, Jenkins</li>
                 <li><strong>Integration:</strong> JSON, XML, SOAP, JWT, SAP/SAGE</li>
             </ul>
         </section>
@@ -60,39 +59,45 @@
             <h2>💼 Professional Experience</h2>
             <article>
                 <h3>Alpha Automation LDA <span class="years">2021–2025</span></h3>
-                <p>Designed and built .NET Core/Angular apps, integrated SAP, tuned SQL, and developed SSRS reports.</p>
+                <p>Designed and built .NET Core/Angular apps, integrated SAP, optimized SQL performance, and developed SSRS reports.</p>
             </article>
             <article>
                 <h3>Pepper Group <span class="years">2018–2020</span></h3>
-                <p>Maintained WinForms ARM system, handled DB versioning and CI scripting.</p>
+                <p>Maintained a WinForms ARM system, handled database versioning, and implemented CI/CD scripting.</p>
             </article>
             <article>
                 <h3>Gestecnica LDA <span class="years">2018 & 2020–2021</span></h3>
-                <p>Migrated ASP to .NET, developed billing tools, mentored junior developers.</p>
+                <p>Migrated legacy ASP to .NET, developed billing tools, and mentored junior developers.</p>
             </article>
         </section>
 
         <section id="education" class="fade-in">
             <h2>🎓 Education</h2>
-            <p><strong>Technical University of Moldova</strong><br>BSc in Computer Systems Engineering – Informatics & Microelectronics
+            <p><strong>Technical University of Moldova</strong><br /> BSc in Computer Systems Engineering – Informatics & Microelectronics
             </p>
         </section>
 
         <section id="extras" class="fade-in">
             <h2>🌍 Languages & Extras</h2>
-            <p>Portuguese (native), English (fluent), Romanian (native), Russian (fluent)</p>
-            <p>Driving License (EU) – Immediate Availability</p>
+            <p>Languages: Portuguese (native), English (fluent), Romanian (native), Russian (fluent)</p>
+            <p>Driving License: EU – Available for immediate start</p>
         </section>
 
         <section id="contact" class="fade-in">
             <h2>📬 Contact Me</h2>
             <p>You can reach me directly via email:</p>
-            <a href="mailto:indo23md@yahoo.com" class="download-btn">Email Me</a>
+            <a href="mailto:indo23md@yahoo.com" class="download-btn" aria-label="Email Gheorghe Graur">Email Me</a>
         </section>
 
         <section id="cv" class="fade-in">
             <h2>📄 Download CV</h2>
-            <a href="Gheorghe_Graur_CV.pdf" download class="download-btn">Download My CV (PDF)</a>
+            <a href="Gheorghe_Graur_CV.pdf" download class="download-btn" aria-label="Download Gheorghe Graur's CV">Download My CV (PDF)</a>
+        </section>
+
+        <section id="qr-code" class="fade-in-center">
+            <h2>📱 Support Me</h2>
+            <p>Scan the QR code below to buy me a coffee:</p>
+            <img src="bmc_qr.png" alt="QR code to buy Gheorghe Graur a coffee" class="qr-code" />
         </section>
     </main>
 
@@ -100,17 +105,10 @@
         <p>&copy; 2025 Gheorghe Graur – Built with ❤️</p>
     </footer>
 
-    <!-- Buy Me a Coffee -->
+    <!-- Buy Me a Coffee Floating Button -->
     <a href="https://coff.ee/ggraur" target="_blank" id="bmc-button" title="Buy me a coffee ☕" rel="noopener noreferrer" aria-label="Buy me a coffee">
-        <span role="img" aria-label="Coffee cup">☕</span></a>
-
-
-    <section id="qr-code" class="fade-in-center">
-        <h2>📱 Support Me</h2>
-        <p>Scan the QR code below to buy me a coffee:</p>
-        <img src="bmc_qr.png" alt="Buy Me a Coffee QR" class="qr-code" />
-    </section>
+        ☕
+    </a>
 </body>
-
 
 </html>
