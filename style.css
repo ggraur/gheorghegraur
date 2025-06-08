@@ -92,6 +92,12 @@ form button:hover {
     margin: 40px 0;
 }
 
+.fade-in-center {
+    animation: fadeIn 1s ease-out;
+    text-align: center;
+    margin: 40px 0;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
